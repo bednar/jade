@@ -30,7 +30,7 @@
     <scm>
         <connection>scm:git:git@github.com:bednar/jade.git</connection>
         <developerConnection>scm:git:git@github.com:bednar/jade.git</developerConnection>
-        <url>git@github.com:bednar/jQuery.git</url>
+        <url>git@github.com:bednar/jade.git</url>
     </scm>
 
     <developers>
