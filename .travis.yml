@@ -1,5 +1,11 @@
 language: java
+
 jdk:
-  - oraclejdk7
-  - openjdk7
-  - openjdk6
+- oraclejdk7
+
+script: 'mvn clean install deploy --settings src/main/config/travis-maven-settings.xml -U'
+
+env:
+  global:
+  - secure: R755h+6uKhU4wDTMHh29rpCiEODU+VrByLloaVqtIa7LPiFeVNoHpx17ygSgwVSs63DtM/mWcwD3qyCbhakg/Gfh28KXqZErVG0TcLzpuf3D7A/aHQb1XQVtkksshx3e+Phw+XfzlsQVXHRei8gIjIBFmRpwwlEyEx5tGiZkUkI=
+  - secure: Ngp3F7WqRcC/g47vPPkXFrZVoKRc2TApJWDyx82A0d45Gymp3mgFZeRb7VP5OMr8rXQCqIPXCXSc8+nnwF+B7gKCNQT8ew1eAzzg1BwbCEVPoA8F2fi5XOpWs8F1o/dwjvnR9HCHjE1J1SZM0tNCVND+UxfJlx6+9YVAPYhokHc=
