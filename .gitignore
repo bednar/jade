@@ -5,3 +5,7 @@ atlassian-ide-plugin.xml
 
 # Maven Files #
 target/
+
+# Generated Files #
+jade.min.js
+runtime.min.js

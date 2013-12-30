@@ -5,6 +5,7 @@
 
 |   jQuery  |   Maven   |
 |:---------:|:---------:|
+|   1.0.1   |   1.0.1   |
 |   0.35.0  |   0.35.0  |
 
 
@@ -13,13 +14,24 @@
     <dependency>
         <groupId>com.github.bednar</groupId>
         <artifactId>jade</artifactId>
-        <version>0.35.0</version>
+        <version>1.0.1</version>
     </dependency>
 
 ### Reference in HTML
 
     <script src="lib/jade/runtime.js" type="text/javascript"></script>
     <script src="lib/jade/runtime.min.js" type="text/javascript"></script>
+
+    <script src="lib/jade/jade.js" type="text/javascript"></script>
+    <script src="lib/jade/jade.min.js" type="text/javascript"></script>
+
+### Use in Java
+
+    this.getClass().getResourceAsStream("/lib/jade/runtime.js")
+    this.getClass().getResourceAsStream("/lib/jade/runtime.min.js")
+
+    this.getClass().getResourceAsStream("/lib/jade/jade.js")
+    this.getClass().getResourceAsStream("/lib/jade/jade.min.js")
 
 ### Repository
 

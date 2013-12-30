@@ -7,7 +7,7 @@
     <!--suppress MavenRedundantGroupId -->
     <groupId>com.github.bednar</groupId>
     <artifactId>jade</artifactId>
-    <version>0.35.0</version>
+    <version>1.0.1</version>
 
     <parent>
         <artifactId>maven-parent</artifactId>
@@ -40,6 +40,38 @@
             <email>jakub.bednar@gmail.com</email>
         </developer>
     </developers>
+
+    <build>
+
+        <plugins>
+
+            <plugin>
+                <groupId>com.samaxes.maven</groupId>
+                <artifactId>minify-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>default-minify</id>
+                        <phase>process-resources</phase>
+                        <configuration>
+                            <charset>${default.encoding}</charset>
+                            <webappSourceDir>${project.basedir}/src/main/resources/META-INF/resources/</webappSourceDir>
+                            <webappTargetDir>${project.basedir}/src/main/resources/META-INF/resources/</webappTargetDir>
+                            <jsSourceDir>lib</jsSourceDir>
+                            <jsSourceIncludes>
+                                <jsSourceInclude>**/*.js</jsSourceInclude>
+                            </jsSourceIncludes>
+                            <skipMerge>true</skipMerge>
+                        </configuration>
+                        <goals>
+                            <goal>minify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+
+    </build>
 
     <repositories>
 
