@@ -4,7 +4,7 @@
 
 ### Supported Versions
 
-|   jQuery  |   Maven   |
+|   Jade    |   Maven   |
 |:---------:|:---------:|
 |   1.0.1   |   1.0.1   |
 |   0.35.0  |   0.35.0  |
