@@ -46,21 +46,6 @@
         <plugins>
 
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-clean-plugin</artifactId>
-                <configuration>
-                    <filesets>
-                        <fileset>
-                            <directory>${project.basedir}/src/main/resources/META-INF/resources/lib</directory>
-                            <includes>
-                                <include>**/*min.js</include>
-                            </includes>
-                        </fileset>
-                    </filesets>
-                </configuration>
-            </plugin>
-
-            <plugin>
                 <groupId>com.samaxes.maven</groupId>
                 <artifactId>minify-maven-plugin</artifactId>
                 <executions>
@@ -69,8 +54,8 @@
                         <phase>process-resources</phase>
                         <configuration>
                             <charset>${default.encoding}</charset>
-                            <webappSourceDir>${project.basedir}/src/main/resources/META-INF/resources/</webappSourceDir>
-                            <webappTargetDir>${project.basedir}/src/main/resources/META-INF/resources/</webappTargetDir>
+                            <webappSourceDir>${project.basedir}/src/main/resources</webappSourceDir>
+                            <webappTargetDir>${project.build.outputDirectory}/</webappTargetDir>
                             <jsSourceDir>lib</jsSourceDir>
                             <jsSourceIncludes>
                                 <jsSourceInclude>**/*.js</jsSourceInclude>
