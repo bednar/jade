@@ -7,5 +7,4 @@ atlassian-ide-plugin.xml
 target/
 
 # Generated Files #
-jade.min.js
-runtime.min.js
+*.min.js
