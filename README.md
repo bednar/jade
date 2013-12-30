@@ -26,7 +26,7 @@
     <script src="lib/jade/jade.js" type="text/javascript"></script>
     <script src="lib/jade/jade.min.js" type="text/javascript"></script>
 
-### Use in Java
+### Java
 
     this.getClass().getResourceAsStream("/lib/jade/runtime.js")
     this.getClass().getResourceAsStream("/lib/jade/runtime.min.js")
