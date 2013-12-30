@@ -1,5 +1,6 @@
-[![Build Status](https://api.travis-ci.org/bednar/jade.png?branch=master)](https://travis-ci.org/bednar/jade) [Jade](http://jade-lang.com)
+ [Jade](http://jade-lang.com)
 ====
+[![Build Status](https://api.travis-ci.org/bednar/jade.png?branch=master)](https://travis-ci.org/bednar/jade)
 
 ### Supported Versions
 
