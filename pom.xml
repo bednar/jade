@@ -10,13 +10,12 @@
     <version>1.0.1</version>
 
     <parent>
-        <artifactId>maven-parent</artifactId>
         <groupId>com.github.bednar</groupId>
+        <artifactId>maven-parent-javascript-library</artifactId>
         <version>1-SNAPSHOT</version>
     </parent>
 
     <name>Jade Template Engine Maven Dependency</name>
-
     <url>https://github.com/bednar/jade</url>
 
     <licenses>
@@ -32,59 +31,6 @@
         <developerConnection>scm:git:git@github.com:bednar/jade.git</developerConnection>
         <url>git@github.com:bednar/jade.git</url>
     </scm>
-
-    <developers>
-        <developer>
-            <id>bednar</id>
-            <name>Jakub Bednář</name>
-            <email>jakub.bednar@gmail.com</email>
-        </developer>
-    </developers>
-
-    <build>
-
-        <plugins>
-
-            <plugin>
-                <groupId>com.samaxes.maven</groupId>
-                <artifactId>minify-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>default-minify</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>minify</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>copy-resources</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.build.outputDirectory}/META-INF/resources</outputDirectory>
-                            <resources>
-                                <resource>
-                                    <directory>${project.build.outputDirectory}</directory>
-                                    <filtering>false</filtering>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
-        </plugins>
-
-    </build>
 
     <repositories>
 
