@@ -52,16 +52,6 @@
                     <execution>
                         <id>default-minify</id>
                         <phase>process-resources</phase>
-                        <configuration>
-                            <charset>${default.encoding}</charset>
-                            <webappSourceDir>${project.basedir}/src/main/resources</webappSourceDir>
-                            <webappTargetDir>${project.build.outputDirectory}/</webappTargetDir>
-                            <jsSourceDir>lib</jsSourceDir>
-                            <jsSourceIncludes>
-                                <jsSourceInclude>**/*.js</jsSourceInclude>
-                            </jsSourceIncludes>
-                            <skipMerge>true</skipMerge>
-                        </configuration>
                         <goals>
                             <goal>minify</goal>
                         </goals>
