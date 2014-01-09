@@ -6,6 +6,7 @@
 
 |   Jade    |   Maven   |
 |:---------:|:---------:|
+|   1.1.2   |   1.1.2   |
 |   1.0.1   |   1.0.1   |
 |   0.35.0  |   0.35.0  |
 
@@ -15,7 +16,7 @@
     <dependency>
         <groupId>com.github.bednar</groupId>
         <artifactId>jade</artifactId>
-        <version>1.0.1</version>
+        <version>1.1.2</version>
     </dependency>
 
 ### Reference in HTML
