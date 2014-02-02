@@ -7,7 +7,7 @@
     <!--suppress MavenRedundantGroupId -->
     <groupId>com.github.bednar</groupId>
     <artifactId>jade</artifactId>
-    <version>1.1.3</version>
+    <version>1.1.5</version>
 
     <parent>
         <groupId>com.github.bednar</groupId>
